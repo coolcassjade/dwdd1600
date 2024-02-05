@@ -1,0 +1,122 @@
+body {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+/*Header Stuff Here*/
+header { background-color: #03a688;
+    padding: 1rem 2vw;
+}
+header h1 {
+    margin: 0;
+    color: #024873;
+}
+header p {
+    margin: 0;
+    color: #024873;
+    letter-spacing: 1px;
+}
+nav {
+    background-color: #0396a6;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+}
+nav a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #024873;
+    font-weight: 700;
+    display: block;
+    padding: .83rem 2rem;
+}
+nav li.active a {
+    background-color:#024873 ;
+    color: #0396a6;
+}
+nav a:hover {
+    color: white;
+}
+/*Main Stuff Here*/
+main {
+    padding: 1rem 2vw;
+}
+main h1 {
+    color: #d64ed9;
+}
+main h2 {
+    color: #0396a6;
+    margin-bottom: .2rem;
+}
+main p {
+    color: #024873 ;
+    margin-bottom: .3rem ;
+}
+main ol {
+    padding: .5rem 5vw;
+    background-color: #03a688;
+    color: #024873;
+    font-weight: 700;
+}
+main p a {
+    color:#26168c
+    
+}
+main p a:hover {
+    color:#d64ed9;
+}
+main ul {
+    list-style-type: square;
+    padding: 1rem 5vw;
+    
+    background-color: #03a688;
+    color: #024873;
+    font-weight: 700;
+}
+main li {
+    line-height: 125%;
+    margin-top: .65rem;
+    margin-bottom: .65rem;
+    font-size: .95rem;
+}
+main dl dt {
+color:#d64ed9 ;
+font-weight: 700 ;
+}
+main dl dd {
+    color:#024873;
+    font-size: .95rem;
+}
+main address {
+    font-style: normal;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 2px solid #0396a6;
+    border-radius: 7px;
+    color: #024873;
+    font-weight: 700;
+}
+main address a {
+    color: #26168c;
+}
+main address a:hover {
+    color:#d64ed9  ;
+}
+
+/*Footer Stuff Here*/
+footer {
+    background-color:#0396a6 ;
+    text-align: center;
+    color: #024873;
+    font-weight: 700;
+    padding: 1rem 0;
+}
+footer a {
+    color: #26168c;
+}
+footer a:hover {
+    color:#d64ed9  ;
+}
