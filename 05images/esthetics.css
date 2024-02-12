@@ -124,6 +124,7 @@ figure.wrapped figcaption {
 div.gallery {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 div.gallery figure {
     margin: .5rem 2% 0 0;
