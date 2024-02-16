@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="All things makeup and skincare">
+    <meta name="author" content="Cassidy Copsey">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+<title>Now Esthetics: Home</title>
+<link rel="stylesheet" href="esthetics.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!--start the page header-->
+    <header>
+        <h1>Now Esthetics</h1>
+        <p>All Things Makeup and Skincare</p>
+    </header>
+
+    <!--start the page navigation-->
+    <nav>
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="makeup.html">Makeup</a></li>
+            <li class="active"><a href="skincare.html">Skincare</a></li>
+            <li><a href="trends.html">Trends</a></li>
+        </ul>
+    </nav>
+
+    <!--start of the page main-->
+    <main>
+        <h1>Skincare</h1>
+
+        <h2>The Survey</h2>
+
+        <p>Skincare is just as subjective to skintype as makeup is. To get the best tips, products, and/or education from our author, we have provided a survey taylored to your specific needs. </p>
+            <p><strong>Please fill out the below fields:</strong></p>
+            <br>
+
+        <form method="get" class="myForm" action="thanks.html">
+
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label>First Name*<input type="text" name="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" required></label>
+                <label>Email*<input type="email" name="email" required placeholder="esthetics@gmail.com"></label>
+                <label>Cell Number*<input type="tel" name="phone" required placeholder="801-888-1234"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>What do you want to know?</legend>
+                    <label><input type="radio" name="method" value="tips">Tips and Advice</label>
+                    <label><input type="radio" name="method" value="products">Recommended Products</label>
+                    <label><input type="radio" name="method" value="facts">Facts and Other Information</label>
+                    <label><input type="radio" name="method" value="all">All of the Above</label>
+            </fieldset>
+
+        <fieldset>
+            <label>What is your Skintype?
+                <select name="skintype">
+                    <option value="none">Please Select</option>
+                    <option value="normal">Normal Skin</option>
+                    <option value="dry">Dry Skin</option>
+                    <option value="oily">Oily Skin</option>
+                    <option value="combination">Combination Skin</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Other Skin Attributes</legend>
+            <label><input type="checkbox" name="acne" value="chosen">Acne-Prone</label>
+            <label><input type="checkbox" name="scarring" value="chosen">Acne Scarred</label>
+            <label><input type="checkbox" name="sensitive" value="chosen">Sensitive</label>
+            <label><input type="checkbox" name="aged" value="chosen">Aging (wrinkles)</label>
+            <label><input type="checkbox" name="hyperpigmentation" value="chosen">Hyperpigmentation</label>
+        </fieldset>
+
+        <label>Comments
+            <textarea name="comments" placeholder="What else do you want us to know?"></textarea>
+        </label>
+
+
+            <input type="submit" value="Get My Skincare">
+        </form>
+        <p><strong>*PLEASE NOTE:</strong> Results are not immediate as our author must review your information. Wait up to <em>24 hours</em>.</p>
+        </main>
+
+
+
+
+    <!--start of the page footer-->
+    <footer>
+        <p>&copy;2024 &bull; Cassidy Copsey &bull; <a href="mailto:coolcassjade@gmail.com">Email Us</a></p>
+       
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
