@@ -1,3 +1,6 @@
+/* prevent probelsm with different browsers*/
+* {box-sizing: border-box;}
+
 body {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
@@ -7,6 +10,11 @@ body {
 /* header stuff here */
 header {
     padding: 1rem 2vw;
+    display: flex;
+    align-items: flex-end;
+}
+header div {
+    padding-left: 1vw;
 }
 header h1 {
     margin: 0;
@@ -21,35 +29,67 @@ header p {
     letter-spacing: 2px;
 }
 
-/* navigation stuff here */
-nav {
-    border-top: solid 1px #E0E6E6;
-    
-}
-nav ul {
-    margin: 0;
-    padding: 0 2vw;
-    list-style-type: none;
-    display: flex;
-}
-nav a {
-    display: block;
-    padding: 1.2rem 1rem .3rem 1rem;
-    font-size: 1rem;
-    text-decoration: none;
-    color: #8C501B;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-align: center;
-    border-bottom: solid 2px #fff;
-}
+/* SMALL screen */
+@media only screen and (max-width: 600px){
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 1px #aaa;
+        color: #8C501B;
+    }
+    nav .active a {
+        background-color: #8C501B;
+        background-image: linear-gradient(to bottom, #8b5022, #653a19);
+        color: white;
+    }
 
-nav .active a {
-    border-bottom: solid 2px #8b5022;
 }
-nav a:hover {
-    color: #000;
+/*end of media query*/
+
+
+/*BIG screen*/
+@media only screen and (min-width: 601px){
+    nav {
+        border-top: solid 1px #E0E6E6;
+        
+    }
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+        display: flex;
+    }
+    nav a {
+        display: block;
+        padding: 1.2rem 1rem .3rem 1rem;
+        font-size: 1rem;
+        text-decoration: none;
+        color: #8C501B;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 2px #fff;
+    }
+    
+    nav .active a {
+        border-bottom: solid 2px #8b5022;
+    }
+    nav a:hover {
+        color: #000;
+    }
+
 }
+/*end of media query*/
+
 
 
 /* main stuff here */
@@ -77,6 +117,17 @@ main a {
     color: #9c3335;
 }
 
+.angelohero {
+    width: 100%;
+    margin: 0;
+}
+.angelohero img {
+    width: 100%;
+    height: auto;
+}
+
+
+
 .angeloGallery {
     display: flex;
     flex-wrap: wrap;
@@ -96,7 +147,9 @@ main a {
     width: 98%;
     height: auto;
 }
-
+.angeloGallery img:hover {
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
 
 
 
@@ -111,4 +164,10 @@ footer {
 }
 footer a {
     color: #8b5022;
+}
+
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
 }
