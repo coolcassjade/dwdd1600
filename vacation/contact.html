@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Travel and Save">
+    <meta name="author" content="Cassidy Copsey">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+ <title> Budget Vacations </title>
+    <link rel="stylesheet" href="vacation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--start the page header-->
+    <header>
+        <div>
+        <h1>Budget Vacations</h1>
+        <p> Travel and Save</p>
+    </div>
+    </header>
+
+    <!--start the page navigation-->
+    <nav>
+        <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="destination.html">Destinations</a></li>
+        <li><a href="package.html">Packages</a></li>
+        <li class="active"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+     <!--start of the page main-->
+     <main>
+        <div>
+        <h1>Contact Us</h1>
+
+        <form method="get" class="myForm" action="thanks.html">
+
+        <fieldset>
+                <legend>What is your message concerning?</legend>
+                <label></label>
+                    <select name="message">
+                        <option value="none">Please Select</option>
+                        <option value="budget">Budgeting issues</option>
+                        <option value="tech">Technical errors</option>
+                        <option value="cancel">Trip cancellation</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <label></label>
+            </fieldset>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label>First Name*<input type="text" name="fname" required></label>
+            <label>Last Name*<input type="text" name="lname" required></label>
+            <label>Email*<input type="email" name="email" required placeholder="vacation@gmail.com"></label>
+            <label>Cell Number*<input type="tel" name="phone" required placeholder="801-***-****"></label>
+        </fieldset>
+        <fieldset>
+            <legend>How would you like to be contacted?</legend>
+                <label><input type="radio" name="method" value="email">Email</label>
+                <label><input type="radio" name="method" value="phone">Phone</label>
+                <label><input type="radio" name="method" value="both">Email and Phone</label>
+        </fieldset>
+        <label class="comment">Questions, Comments, and/or Concerns</label>
+            <textarea name="comments" placeholder="Type here"></textarea>
+            <br>
+        <input type="submit" value="CONTACT US">
+        </form>
+
+    </div>
+    </main>
+
+ <!--start of the page footer-->
+ <footer>
+    <p>&copy;2024 &bull; Budget Vacations &bull; <a href="mailto:budgetvacations@gmail.com">Email Us</a></p>
+   
+</footer>
+
+</body>
+</html>
